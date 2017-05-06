@@ -1,2 +1,4 @@
 name: Jeffrey Cardozo
 markdown: kramdown
+gems:
+  - jekyll-sitemap
