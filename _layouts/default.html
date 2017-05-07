@@ -7,28 +7,38 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- link to stylesheet -->
+        <link rel="shortcut icon" type="image/png" href="{{ "/favicon.png" | prepend: site.baseurl }}" >
         <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/main.css">
         <!-- <script src="/js/bootstrap.min.js"></script> -->
 	</head>
 	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/projects">Projects</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-    
-    <div class="container">
-    {{content}}
-    </div>
-		<footer>
+        <div id='wrap'>
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="#">jpCobalt</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                </ul>
+              </div>
+            </nav>
+        
+            <div class="container">
+            {{content}}
+            </div>
+            <div id='push'></div>
+        </div>
+		<div id='footer'>
     		<ul>
         		<li><a href="mailto:cardozo.jeffrey@gmail.com">Email</a></li>
         		<li><a href="https://github.com/jpCobalt">github.com/jpCobalt</a></li>
 			</ul>
-		</footer>
+		</div>
 	</body>
 
 </html>
