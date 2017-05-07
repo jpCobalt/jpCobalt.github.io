@@ -13,10 +13,12 @@
 
         <script src="/js/bootstrap.min.js"></script>        
         <link rel="stylesheet" type="text/css" href="/css/main.css">
+        {% include analytics.html %}
 	</head>
 	<body>
         <div id='wrap'>
-            <nav class="navbar navbar-inverse navbar-fixed-top">
+        <!-- some other classes overwritting -->
+           <!--  <nav class="navbar navbar-inverse navbar-fixed-top">
               <div class="container-fluid">
                 <div class="navbar-header">
                   <a class="navbar-brand" href="/">jpCobalt</a>
@@ -28,8 +30,14 @@
                     <li><a href="/blog">Blog</a></li>
                 </ul>
               </div>
-            </nav>
-        
+            </nav> -->
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/blog">Blog</a></li>
+            </ul>
+            
             <div class="container">
             {{content}}
             </div>
