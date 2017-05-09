@@ -55,6 +55,7 @@ ul#nav {
   position: fixed;
   border-radius: 0;
   height: 100%;
+  z-index:10;
 }
 
 .navbar-fixed-left .navbar-nav > li {
@@ -96,5 +97,7 @@ body {
 #footer {
   height: 40px;
   background-color: #f5f5f5;
+  position:relative;
+  z-index:20;
 }
 
