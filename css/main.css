@@ -20,32 +20,20 @@ body {
     width:60px
 }
 
-ul#nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+/* Top Nav Bar Override */
+
+.navbar{
+  border-radius:none;
+  margin-bottom:0;
+  border:none; /*possibly change to make it stand out more */
+}
+@media(min-width: 768px){
+  .navbar{
+    border-radius:none;
+  }
 }
 
-#nav li {
-    float: left;
-}
-
-#nav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-#nav li a:hover {
-    background-color: #111;
-    color:white;
-    text-decoration:none;
-}
+/* End Nav Bar Override */
 
 
 /* Left Nav Bar styles */
@@ -96,7 +84,7 @@ body {
 /* Set the fixed height of the footer here */
 #footer {
   height: 40px;
-  background-color: #f5f5f5;
+  background-color: #ccc;
   position:relative;
   z-index:20;
 }
