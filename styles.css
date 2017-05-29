@@ -176,7 +176,7 @@ footer {
   margin-top:245px;
 }
 
-@media screen  and (max-width: 1024){
+@media screen and (max-width: 1024px){
   .mdl-layout__content{
     margin-top:205px;
   }
