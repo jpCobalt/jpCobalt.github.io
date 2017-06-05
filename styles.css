@@ -1,6 +1,6 @@
 .portfolio-header {
   position: fixed;
-  background-image: url(images/header-bg.jpg);
+  background-image: url(images/galaxy-stars);
 }
 
 .portfolio-header .mdl-layout__header-row {
@@ -173,7 +173,20 @@ footer {
 }
 
 .mdl-layout__content {
-  margin-top:245px;
+  margin-top:145px;
+}
+
+.md-mini-footer {
+  padding:5px 16px;
+}
+
+.portfolio-logo-row {
+  min-height: 100px;
+}
+
+.portfolio-logo {
+  height:50px;
+  width:50px;
 }
 
 @media screen and (max-width: 1024px){
