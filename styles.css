@@ -59,6 +59,7 @@
       -ms-flex: 1;
           flex: 1;
   line-height: 42px;
+  color:white;
 }
 
 .portfolio-header .mdl-layout__drawer-button {
@@ -99,7 +100,7 @@
 }
 
 .portfolio-navigation-row {
-  background: url(images/space-stars.PNG);
+  background: url(images/galaxy-stars-2.PNG);
 }
 
 .portfolio-blog-card-compact .mdl-card__title {
@@ -113,7 +114,7 @@
 }
 
 img.article-image {
-  width: 100%;
+  width: 75%;
   height: auto;
 }
 
@@ -178,16 +179,24 @@ footer {
 
 .mdl-layout__content {
   margin-top:145px;
-  background:url(images/su-cloud-background.PNG);
+  background:url(images/su-cloud-background.png);
 }
 
-.md-mini-footer {
+.mdl-mini-footer {
   padding:5px 16px !important;
 }
 
 .portfolio-logo-row {
   min-height: 100px;
   background-image: url(images/galaxy-stars.PNG);
+}
+
+.mdl-mini-footer--link-list, .mdl-mini-footer__link-list {
+  color:white;
+}
+
+.mdl-card__media {
+  text-align:center;
 }
 
 .portfolio-logo {
