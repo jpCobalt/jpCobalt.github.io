@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Portfolio for Jeffrey">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>{{page.title}}</title>
+
+   <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Web Starter Kit">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
+    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#2F3BA2">
+
+    <!-- Color the status bar on mobile devices -->
+    <meta name="theme-color" content="#2F3BA2">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+
+    <!-- Material Design Lite page styles:
+    You can choose other color schemes from the CDN, more info here http://www.getmdl.io/customize/index.html
+    Format: material.color1-color2.min.css, some examples:
+    material.red-teal.min.css
+    material.blue-orange.min.css
+    material.purple-indigo.min.css
+    -->
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-blue.min.css" />
+
+
+    <!-- Your styles -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="shortcut icon" type="image/png" href="{{ "/images/favicon.png" | prepend: site.baseurl }}" >
+       
+  </head>
+
+	<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
+            <div class="mdl-layout__header-row portfolio-logo-row">
+                <span class="mdl-layout__title">
+                    <div class="portfolio-logo"></div>
+                    <span class="mdl-layout__title">{{page.company}}</span>
+                </span>
+            </div>
+            <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
+                <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+                    <a class="mdl-navigation__link {% if page.title == "Portfolio" %}is-active {% endif %}" href="index.html">Portfolio</a>
+                    <!-- <a class="mdl-navigation__link {% if page.title == "Blog" %}is-active {% endif %}" href="blog.html">Blog</a> -->
+                    <a class="mdl-navigation__link {% if page.title == "About" %}is-active {% endif %}" href="about.html">About</a>
+                    <a class="mdl-navigation__link {% if page.title == "Contact" %}is-active {% endif %}" href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+            <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+                <a class="mdl-navigation__link {% if page.title == "Portfolio" %}is-active {% endif %}" href="index.html">Portfolio</a>
+                <!-- <a class="mdl-navigation__link {% if page.title == "Blog" %}is-active {% endif %}" href="blog.html">Blog</a> -->
+                <a class="mdl-navigation__link {% if page.title == "About" %}is-active {% endif %}" href="about.html">About</a>
+                <a class="mdl-navigation__link {% if page.title == "Contact" %}is-active {% endif %}" href="contact.html">Contact</a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <div class="mdl-grid portfolio-max-width {{page.portfolio}}">
+                {{content}}
+            </div>
+            <footer class="mdl-mini-footer">
+                <div class="mdl-mini-footer__left-section">
+                    <div class="mdl-logo">{{page.company}}</div>
+                </div>
+                <div class="mdl-mini-footer__right-section">
+                    <ul class="mdl-mini-footer__link-list">
+                        <li><a href="mailto:cardozo.jeffrey@gmail.com">Email</a></li>
+                        <li><a href="https://github.com/jpCobalt">github.com/jpCobalt</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <!-- build:js scripts/main.min.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    {% include analytics.html %}
+
+</body>
+
+</html>
